@@ -14,9 +14,11 @@ import reportWebVitals from './reportWebVitals';
 import HomeScreen from './screens/HomeScreen';
 
 const router = createBrowserRouter(
-  <Route  path="/" elemet = {<App/>}>
-    <Route  index = {true} path="/" elemet = {<HomeScreen/>}></Route>
-  </Route>
+  createRoutesFromElements(
+    <Route  path="/" element = {<App/>}>
+      <Route  index = {true} path="/" element = {<HomeScreen/>}></Route>
+    </Route>
+  )
 
 );
 
